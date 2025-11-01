@@ -71,7 +71,7 @@ const styles = {
 export default function UserForm({ refresh, editingUser, cancelEdit }) {
   const [form, setForm] = useState({ name: "", email: "", address: "" });
   const [hoverBtn, setHoverBtn] = useState("");
-  const API_URL = "http://localhost:5000/api/users";
+  const API_URL = "/api/users";
 
   // Fill form automatically when editing
   useEffect(() => {
