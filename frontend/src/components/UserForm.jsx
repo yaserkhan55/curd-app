@@ -71,7 +71,7 @@ const styles = {
 export default function UserForm({ refresh, editingUser, cancelEdit }) {
   const [form, setForm] = useState({ name: "", email: "", address: "" });
   const [hoverBtn, setHoverBtn] = useState("");
-  const API_URL = "/api/users";
+  const API_URL = "https://curd-app-azcn.vercel.app/api/users";
 
   // Fill form automatically when editing
   useEffect(() => {
