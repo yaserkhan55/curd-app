@@ -11,6 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
+app.get("/", (req, res) => {
+  res.send("✅ Backend is running successfully!");
+});
+
 
 mongoose
   .connect(process.env.MONGO_URI)
